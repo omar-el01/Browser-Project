@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="39.0" prefWidth="133.0">
+               <children>
+                  <FontAwesomeIconView glyphName="BACKWARD" layoutX="26.0" layoutY="25.0" />
+                  <FontAwesomeIconView glyphName="FORWARD" layoutX="60.0" layoutY="25.0" />
+                  <FontAwesomeIconView glyphName="REFRESH" layoutX="92.0" layoutY="25.0" AnchorPane.topAnchor="14.714285850524902" />
+               </children>
+            </AnchorPane>
+            <TextField prefHeight="25.0" prefWidth="362.0" promptText="SEARCH" style="-fx-border-radius: 20 20 20 20;">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin></TextField>
+            <FontAwesomeIconView glyphName="SEARCH">
+               <HBox.margin>
+                  <Insets left="12.0" top="13.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <ComboBox prefHeight="25.0" prefWidth="10.0" style="-fx-border-radius: 30;">
+               <HBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="343.0" prefWidth="593.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="7.0" top="3.0" />
+         </BorderPane.margin></AnchorPane>
+   </center>
+</BorderPane>
