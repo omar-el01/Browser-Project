@@ -1,45 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <HBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <AnchorPane prefHeight="39.0" prefWidth="133.0">
-               <children>
-                  <FontAwesomeIconView glyphName="BACKWARD" layoutX="26.0" layoutY="25.0" />
-                  <FontAwesomeIconView glyphName="FORWARD" layoutX="60.0" layoutY="25.0" />
-                  <FontAwesomeIconView glyphName="REFRESH" layoutX="92.0" layoutY="25.0" AnchorPane.topAnchor="14.714285850524902" />
-               </children>
-            </AnchorPane>
-            <TextField prefHeight="25.0" prefWidth="362.0" promptText="SEARCH" style="-fx-border-radius: 20 20 20 20;">
-               <HBox.margin>
-                  <Insets top="7.0" />
-               </HBox.margin></TextField>
-            <FontAwesomeIconView glyphName="SEARCH">
-               <HBox.margin>
-                  <Insets left="12.0" top="13.0" />
-               </HBox.margin>
-            </FontAwesomeIconView>
-            <ComboBox prefHeight="25.0" prefWidth="10.0" style="-fx-border-radius: 30;">
-               <HBox.margin>
-                  <Insets left="20.0" top="7.0" />
-               </HBox.margin>
-            </ComboBox>
-         </children>
-      </HBox>
-   </top>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <AnchorPane prefHeight="343.0" prefWidth="593.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-radius: 100;" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets left="7.0" top="3.0" />
-         </BorderPane.margin></AnchorPane>
+            <Insets left="9.0" top="7.5" />
+         </BorderPane.margin>
+         <children>
+            <ToolBar layoutX="2.0" layoutY="7.0" prefHeight="53.0" prefWidth="700.0">
+              <items>
+               <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" >
+               <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons.flaticon.com/png/512/3114/premium/3114883.png?token=exp=1642626698~hmac=ef4c11985a597a21bcac4d0c5d50b749" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" >
+                   <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons.flaticon.com/png/512/3114/premium/3114931.png?token=exp=1642626689~hmac=e7dba8f63bd85beab0cd376e69559a93" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" >
+                   <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/545/545661.png" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+ 
+                  <AnchorPane prefHeight="24.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                       <TextField alignment="CENTER" prefHeight="10.0" prefWidth="450.0" promptText="SEARCH" style="-fx-background-radius: 100;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                       <Button graphicTextGap="0.0" minHeight="8.0" minWidth="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0" >
+                         <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/281/281764.png" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+                       <Button graphicTextGap="0.0" minHeight="8.0" minWidth="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0" >
+                         <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons.flaticon.com/png/512/2961/premium/2961957.png?token=exp=1642626401~hmac=c5fbbaeebd05fb58241040114105a424" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+                     </children>
+                </AnchorPane>                 
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-radius: 100;" >
+                    <graphic>
+               <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="2.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons.flaticon.com/png/512/3031/premium/3031293.png?token=exp=1642626004~hmac=232a2971cac4631ba35fed029d9df683" />
+                     </image>
+                  </ImageView>
+                  </graphic>
+                  </Button>
+                  <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" >
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="new tab" />
+                      <MenuItem mnemonicParsing="false" text="new window" />
+                      <MenuItem mnemonicParsing="false" text="History" />
+                      <MenuItem mnemonicParsing="false" text="settings" />
+                    </items>
+                  </MenuButton>
+</items>
+            </ToolBar>
+         </children>
+        </AnchorPane>
    </center>
 </BorderPane>
